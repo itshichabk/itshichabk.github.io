@@ -1,0 +1,122 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #3B6EA5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../img/vista.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+#desktop
+{
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+#taskbar
+{
+    height: 32px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+#startBtn
+{
+    display: flex;
+    align-items: center;
+    width: 36px;
+    height: 100%;
+}
+
+#startBtn img
+{
+    width: 24px;
+    display: block;
+    margin: auto;
+}
+
+#programs
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.program
+{
+    width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 12px;
+    cursor: default;
+    user-select: none;
+    border-bottom: 3px solid rgba(155, 208, 255, 0.486);
+}
+
+.program:hover, #startBtn:hover
+{
+    background-color: rgba(126, 195, 255, 0.274);
+}
+
+#icons
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.icon
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 72px;
+    margin: 12px 0;
+}
+
+.icon:hover
+{
+    background-color: rgba(126, 195, 255, 0.274);
+    box-shadow: 0 0 0 1px rgba(155, 208, 255, 0.486) inset;
+}
+
+.icon p
+{
+    font-size: 12px;
+    margin: 2px 0;
+    cursor: default;
+    text-shadow: 0px 1px 3px black, 0px 1px 3px black, 0px 1px 3px black, 0px 1px 3px black;
+    text-align: center;
+    user-select: none;
+}
+
+.icon img
+{
+    height: 48px
+}
